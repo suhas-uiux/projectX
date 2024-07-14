@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+    body {
+        background-color: rgb(29, 27, 30);
+    }
+
+    #loginpg {
+        background-color: rgba(62, 2, 92, 1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 1px 1px 15px 1px #ffffff;
+        color: white;
+        border-radius: 12px;
+        padding: 25px;
+    }
+
+    .nav p {
+        color: white;
+        display: flex;
+        padding-left: 17px;
+        align-items: center;
+        font-size: x-large;
+        font-family: "Inter", sans-serif;
+    }
+
+    .nav {
+        display: flex;
+        justify-content: space-between;
+
+        background-color: rgba(71, 71, 71, 0.658);
+    }
+
+    .hounar {
+        height: 20px;
+    }
+    legend{
+        font-family: "Inter", sans-serif;
+    }
+    label{
+        font-family: "Inter", sans-serif;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project-X</title>
+</head>
+
+<body>
+
+    <div class="nav">
+        <div class="sdm">
+            <img src="s1.svg" alt="" class="src">
+        </div>
+        <p>
+            Shri Dharmasthala Manjunatheshwara College of Engineering and Technology, Dharwad
+        </p>
+        <div class="hounar">
+            <img src="dvh.svg" alt="" class="src">
+        </div>
+    </div>
+    <div class="img">
+        <center>
+            <img src="logo.png" alt="" class="src" style="width:519px;">
+        </center>
+    </div>
+
+    <center style="width:1305px">
+        <div id="loginpg" style="width: 311px;height: 114px;">
+            <center>
+                <form action="" method="post">
+                    <legend style="color: white;">
+                        Login
+                    </legend>
+                    <table>
+                        <tr>
+                            <td><label style="color: white;">login ID</label></td>
+                            <td><input type="text" name="txtname" id="login_id" placeholder="sdmcetdhwd"></td>
+                        </tr>
+
+                        <tr>
+                            <td><label style="color:white">password</label></td>
+                            <td><input type="password" name="psd" id="pass" placeholder="@xyz123#"></td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <button type="submit" onclick="validateLoginDetails(event)">submit</button>
+                            </td>
+                            <td><input type="reset" value="Clear" name="btnclear"></td>
+                        </tr>
+
+                    </table>
+
+                </form>
+            </center>
+        </div>
+    </center>
+    <script type="text/javascript">
+        function validateLoginDetails(event) {
+            event.preventDefault();
+            //READ TEXT BOX VALUES n
+            var usrName = document.getElementById("login_id").value;
+            var passwd = document.getElementById("pass").value;
+            var ptn1 = /^[a-zA-Z\s]*$/;
+            var ptn2 = /^[0-9a-z]*$/;
+
+            if (usrName === "" && passwd === "") {
+                alert("First level validation\nPlease enter data");
+            }
+            //validate username and password
+            else {
+                if (usrName.match(ptn1) && passwd.match(ptn2)) {
+                    if (usrName == "projectx" && passwd == "pro10") {
+                        window.location.href = "projectx.html";
+                    }
+                    else {
+                        alert("Invalid username or password");
+                    }
+                }
+                else {
+                    alert("second level validation\nType mismatch");
+                }
+            }
+
+        }
+    </script>
+</body>
+
+</html>

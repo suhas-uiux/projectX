@@ -1,0 +1,191 @@
+
+* {
+  padding: 0%;
+  margin: 0%;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  background-color: rgba(62, 2, 92, 1);
+
+}
+
+.leftbox {
+  width: 100%;
+  margin: 5px;
+}
+
+.logo {
+  padding: 20px;
+  background-color: rgb(34, 34, 34);
+  border-radius: 10px;
+  margin: 5px;
+}
+.rightbox {
+  width: 297%;
+  align-items: center;
+  height: 100%;
+  margin: 10px;
+  max-height: 96vh;
+  overflow-y: scroll;
+  border-radius: 10px;
+}
+
+.logo ul li {
+  list-style: none;
+  color: white;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.librery {
+  background-color: rgb(34, 34, 34);
+
+  border-radius: 10px;
+  margin: 5px;
+  min-height: 72vh;
+
+
+}
+
+.inbox {
+  gap: 10px;
+}
+
+.lib p {
+  color: white;
+  position: relative;
+
+}
+
+.lib {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+}
+
+.leftright {
+  padding: 10px;
+}
+
+.card {
+
+  width: 135px;
+  height: 200px;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 15px;
+  background-color: #2d2b2bdb;
+
+}
+
+
+.title {
+  color: white;
+}
+
+.bar {
+  display: flex;
+  justify-content: space-evenly;
+  padding-left: 6px;
+  padding-right: 50px;
+  padding-top: 10px;
+
+
+}
+
+
+.boxex {
+  font-size: large;
+  border: 5px solid rgb(53, 4, 143);
+  padding: 40px;
+  margin: 3px;
+  border-radius: 30px;
+  margin-top: 10px;
+  background-color: aliceblue;
+  margin-right: 95px;
+  color: white;
+
+
+}
+
+.boxex p {
+  color: black;
+
+}
+
+.projcects {
+  height: 100%;
+  width: 100%;
+}
+
+.task {
+
+  /* background-color:white; */
+  padding: 10px;
+  width: 100%;
+  margin-top: 5px;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 5px;
+  margin-right: 20px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #333;
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.task li {
+  margin: 1%;
+  margin-top: 20px;
+  margin-right: 38px;
+  margin-left: 18px;
+  padding: 30px;
+
+  border-radius: 25px;
+  color: white;
+  cursor: pointer;
+  list-style-type: none;
+
+  color: white;
+  font-family: Inria Serif;
+
+}
+
+.task li:hover {
+  background-color: #2d2b2bdb;
+  box-shadow: 2px 2px 20px 5px #7805e4;
+  transform: scale(1.1);
+  text-shadow: 0px 0px 2px white;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-right: 60px;
+
+}
+
+.boxex a {
+  text-decoration: none;
+}
